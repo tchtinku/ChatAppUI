@@ -1,7 +1,6 @@
 import 'dart:async';
+import 'package:chatapp_ui/home_page.dart';
 import 'package:flutter/material.dart';
-
-import 'home_page.dart';
 
 class Splash extends StatefulWidget {
   @override
@@ -58,7 +57,7 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin {
               Padding(
                   padding: EdgeInsets.only(bottom: 30.0),
                   child: new Image.asset(
-                    'asset/powered_by.png',
+                    'assets/powered_by.png',
                     height: 25.0,
                     fit: BoxFit.scaleDown,
                   ))
@@ -68,7 +67,7 @@ class VideoState extends State<Splash> with SingleTickerProviderStateMixin {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new Image.asset(
-                'asset/devs.jpg',
+                'assets/devs.jpg',
                 width: animation.value * 250,
                 height: animation.value * 250,
               ),
